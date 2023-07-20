@@ -14,6 +14,6 @@ let rect = className.getBoundingClientRect()
 let elementTopPercentage = ((rect.top - rectMin.top) * 87.5) / top
 let elementLeftPercentage = ((rect.left - rectMin.left) * 87.5) / left
 
-return [elementTopPercentage, elementLeftPercentage]
+return [parseFloat(elementTopPercentage.toFixed(1)), parseFloat(elementLeftPercentage.toFixed(1))]
 }
 
