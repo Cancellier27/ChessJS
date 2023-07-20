@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  background-color: lightgrey;
+}
+
+#chessBoardShoulder {
+  width: 40vw;
+  height: 40vw;
+  background-color: rgb(99, 92, 92);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#chessBoard {
+  width: 38vw;
+  height: 38vw;
+  background-color: #fff;
+
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+
+  position: relative;
+}
+
+.whiteTile {
+  background-color: #fff;
+}
+
+.blackTile {
+  background-color: rgb(194, 157, 116);
+}
+
+.rook {
+  width: 75%;
+  height: 75%;  
+}
+
+.blackRookLeft {
+  position: absolute;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 12.5%;
+  height: 12.5%;
+
+  top: 87.5%;
+  left: 87.5%;
+}
+
+.blackRookRight {
+  position: absolute;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 12.5%;
+  height: 12.5%;
+
+  top: 37.5%;
+  left: 0%;
+}
+.minPosition {
+  position: absolute;
+  cursor: pointer;
+
+  z-index: -1;
+
+  width: 12.5%;
+  height: 12.5%;
+
+  top: 0%;
+  left: 0%;
+}
+.maxPosition {
+  position: absolute;
+  cursor: pointer;
+
+  z-index: -1;
+
+  width: 12.5%;
+  height: 12.5%;
+
+  top: 87.5%;
+  left: 87.5%;
+}
