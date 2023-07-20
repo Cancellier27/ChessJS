@@ -2,13 +2,16 @@ let rookL = document.querySelector(".blackRookLeft")
 let rookR = document.querySelector(".blackRookRight")
 
 
-function move() {
-  console.log("moved")
-  // rook.style.border = "solid red 5px"
+function move(classElement) {
+  let piece = document.querySelector(classElement)
+  piece.style.border = "solid red 5px"
+  
+  let piecePosition = findPosition(piece)
 
-  console.log(findPosition(rookL))
-  console.log(findPosition(rookR))
+  if (piecePosition[0] === 87.5) {
+    return 
+  }
 
-
-
+  piece.style.top = `${piecePosition[0] + 12.5}%`
+  return
 }
