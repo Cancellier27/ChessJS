@@ -54,35 +54,6 @@ body {
   height: 75%;  
 }
 
-.blackRookLeft {
-  position: absolute;
-  cursor: pointer;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 12.5%;
-  height: 12.5%;
-
-  top: 87.5%;
-  left: 87.5%;
-}
-
-.blackRookRight {
-  position: absolute;
-  cursor: pointer;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 12.5%;
-  height: 12.5%;
-
-  top: 0%;
-  left: 0%;
-}
 .minPosition {
   position: absolute;
   cursor: pointer;
@@ -106,4 +77,40 @@ body {
 
   top: 87.5%;
   left: 87.5%;
+}
+
+.piece {
+  position: absolute;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 12.5%;
+  height: 12.5%;
+}
+
+.piece:hover {
+  border: solid green 4px;
+}
+
+.blackRookLeft {
+  top: 87.5%;
+  left: 0%;  
+}
+
+.blackpawnA {
+  top: 75%;
+  left: 0%;
+}
+
+.whiteRookLeft {
+  top: 0%;
+  left: 0%;
+}
+
+.WhitepawnA {
+  top: 12.5%;
+  left: 0%;
 }

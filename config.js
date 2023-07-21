@@ -4,7 +4,7 @@ let rookR = document.querySelector(".blackRookRight")
 
 function move(classElement) {
   let piece = document.querySelector(classElement)
-  piece.style.border = "solid red 5px"
+  piece.style.border = "solid red 4px"
   
   let piecePosition = findPosition(piece)
 
