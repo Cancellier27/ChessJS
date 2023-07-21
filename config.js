@@ -11,6 +11,7 @@ function move(classElement) {
   if (piecePosition[0] === 87.5) {
     return 
   }
+  console.log(piece.getAttribute("name"))
 
   piece.style.top = `${piecePosition[0] + 12.5}%`
   return
