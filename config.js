@@ -5,7 +5,7 @@ let rookR = document.querySelector(".blackRookRight")
 function move(classElement) {
   let piece = document.querySelector(classElement)
   let pieceName = piece.getAttribute("name")
-  piece.style.border = "solid red 4px"
+  
   
  
 
@@ -20,7 +20,7 @@ function move(classElement) {
     pawnMovement(pieceName, piece)
   }
 
-  piece.style.border = "none"
+  
 
   // piece.style.top = `${piecePosition[0] + 12.5}%`
   return
